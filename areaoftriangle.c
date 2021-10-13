@@ -1,20 +1,12 @@
-#include<stdio.h>
-#include<math.h>
-
+#include <stdio.h>
 int main()
 {
-  float a, b, c, Perimeter, s, Area;
-  
-  printf("\nPlease Enter three sides of triangle\n");
-  scanf("%f%f%f",&a,&b,&c);
-   
-  Perimeter = a+b+c;
-  s = (a+b+c)/2;
-  Area = sqrt(s*(s-a)*(s-b)*(s-c));
-   
-  printf("\n Perimeter of Traiangle = %.2f\n", Perimeter);
-  printf("\n Semi Perimeter of Traiangle = %.2f\n",s);
-  printf("\n Area of triangle = %.2f\n",Area);
-
-  return 0;
+    float base, height, area;
+    printf("Enter base of the triangle: ");
+    scanf("%f", &base);
+    printf("Enter height of the triangle: ");
+    scanf("%f", &height);
+    area = (base * height) / 2;
+    printf("Area of the triangle = %.2f sq. units", area);
+    return 0;
 }
