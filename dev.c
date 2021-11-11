@@ -2,7 +2,7 @@
 int main()
 {
 char character;
-printf("Enter A Character");
+printf("Entter A Character");
 scanf("%c",&character);
 switch(character)
 {
